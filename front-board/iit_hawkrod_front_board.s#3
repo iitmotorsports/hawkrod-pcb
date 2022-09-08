@@ -8665,6 +8665,8 @@ W = angled&lt;p&gt;
 <text x="-2.032" y="-71.628" size="0.6096" layer="91">R_WHEEL_SENSOR_GND</text>
 <text x="-2.032" y="-74.168" size="0.6096" layer="91">R_WHEEL_SENSE</text>
 <text x="-25.4" y="71.12" size="6.4516" layer="91">External I/O</text>
+<text x="127" y="-111.76" size="6.4516" layer="91">HawkRod 22'</text>
+<text x="127" y="-116.84" size="2.54" layer="91">Revision 2022.1-beta | Last Updated: 9/5/2022</text>
 </plain>
 <instances>
 <instance part="SV1" gate="G$1" x="139.7" y="-55.88" smashed="yes">
@@ -9316,6 +9318,14 @@ W = angled&lt;p&gt;
 <wire x1="116.84" y1="68.58" x2="116.84" y2="-149.86" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-149.86" x2="-25.4" y2="-149.86" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-149.86" x2="-25.4" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<wire x1="121.92" y1="-149.86" x2="121.92" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-99.06" x2="233.68" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-99.06" x2="233.68" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-149.86" x2="121.92" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

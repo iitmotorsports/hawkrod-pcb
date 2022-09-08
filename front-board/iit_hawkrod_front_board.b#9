@@ -2577,7 +2577,11 @@ design rules under a new name.</description>
 <contactref element="STEER_SENSOR" pad="2"/>
 <contactref element="R18" pad="2"/>
 <contactref element="R8" pad="1"/>
-<wire x1="-56.840315625" y1="-48.100284375" x2="-86.27496875" y2="-54.2821875" width="0" layer="19" extent="1-1"/>
+<contactref element="DRIVE_CONTROLS" pad="2"/>
+<contactref element="DRIVE_CONTROLS" pad="6"/>
+<wire x1="-70.881190625" y1="-72.7432125" x2="-81.041190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
+<wire x1="-86.27496875" y1="-54.2821875" x2="-81.041190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.840315625" y1="-48.100284375" x2="-70.881190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.493896875" y1="-34.550909375" x2="-56.840315625" y2="-48.100284375" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.67248125" y1="-22.22944375" x2="-54.493896875" y2="-34.550909375" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.123528125" y1="-25.1071625" x2="-18.67248125" y2="-22.22944375" width="0" layer="19" extent="1-1"/>
@@ -2970,6 +2974,12 @@ design rules under a new name.</description>
 <contactref element="START_BUTTON" pad="4"/>
 <contactref element="U$3" pad="4"/>
 <wire x1="47.444659375" y1="37.005165625" x2="-84.471128125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="DRIVE_CONTROLS" pad="1"/>
+</signal>
+<signal name="N$10">
+<contactref element="DRIVE_CONTROLS" pad="7"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

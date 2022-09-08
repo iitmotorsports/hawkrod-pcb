@@ -159,25 +159,6 @@
 <libraries>
 <library name="SAE_2019">
 <packages>
-<package name="TE-5-2172077-2">
-<hole x="-7.5" y="-1.27" drill="2.35"/>
-<hole x="7.5" y="-1.27" drill="2.35"/>
-<hole x="-7.5" y="-5.27" drill="2.8"/>
-<hole x="7.5" y="-5.27" drill="2.8"/>
-<pad name="1" x="0" y="0" drill="1"/>
-<pad name="7" x="-2.725" y="0" drill="1"/>
-<pad name="3" x="2.725" y="0" drill="1"/>
-<pad name="6" x="-2.075" y="-2.54" drill="1"/>
-<pad name="5" x="0" y="-2.54" drill="1"/>
-<pad name="4" x="2.075" y="-2.54" drill="1"/>
-<pad name="8" x="-1.5" y="2.54" drill="1"/>
-<pad name="2" x="1.5" y="2.54" drill="1"/>
-<wire x1="-9.75" y1="5" x2="9.75" y2="5" width="0.127" layer="21"/>
-<wire x1="9.75" y1="5" x2="9.75" y2="-10" width="0.127" layer="21"/>
-<wire x1="9.75" y1="-10" x2="-9.75" y2="-10" width="0.127" layer="21"/>
-<wire x1="-9.75" y1="-10" x2="-9.75" y2="5" width="0.127" layer="21"/>
-<text x="-9.6" y="5.6" size="1.5" layer="21" font="vector" ratio="20">&gt;NAME</text>
-</package>
 <package name="R-PDSO-8">
 <description>TI R-PDS0-G8</description>
 <wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.2" layer="21"/>
@@ -206,22 +187,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="TE-5-2172077-2">
-<pin name="P$1" x="17.78" y="17.78" length="middle" rot="R180"/>
-<pin name="P$2" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="P$3" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="P$4" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="P$5" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="P$6" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="P$7" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="P$8" x="17.78" y="-17.78" length="middle" rot="R180"/>
-<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<text x="-12.7" y="25.4" size="2.54" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-27.94" size="2.54" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="SN65HVD230D">
 <description>SN65HVD230D</description>
 <pin name="D" x="-17.78" y="7.62" length="middle"/>
@@ -259,30 +224,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TE-5-2172077-2" prefix="C">
-<description>&lt;b&gt;5-2172077-2&lt;/b&gt;&lt;br&gt;
-TE - Circular Metric Connectors M12 FMLE PNLREAR 8P ACODE PCBSTD RA SHLD</description>
-<gates>
-<gate name="G$1" symbol="TE-5-2172077-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TE-5-2172077-2">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SN65HVD230D">
 <description>&lt;b&gt;SN65HVD230&lt;/b&gt;&lt;br&gt;
 TI - 3.3-V CAN Bus Transceivers</description>
@@ -8643,7 +8584,6 @@ W = angled&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="CONN1" library="SAE_2019" deviceset="TE-5-2172077-2" device=""/>
 <part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="SAE_2019" deviceset="SN65HVD230D" device=""/>
@@ -8653,8 +8593,6 @@ W = angled&lt;p&gt;
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="4.7nF"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100 nF"/>
-<part name="CONN2" library="SAE_2019" deviceset="TE-5-2172077-2" device=""/>
-<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$2" library="SAE_2019" deviceset="NVD5C648NLT4G" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8691,16 +8629,12 @@ W = angled&lt;p&gt;
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L_WHEEL_SENSOR" library="5-103635-2" deviceset="5-103635-2" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R_WHEEL_SENSOR" library="5-103635-2" deviceset="5-103635-2" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="17.78" y="-226.06" size="1.778" layer="91">WHEEL_SENS_1</text>
-<text x="17.78" y="-256.54" size="1.778" layer="91">WHEEL_SENS_2</text>
-<text x="17.78" y="-241.3" size="1.778" layer="91">WHEEL_1_GND</text>
-<text x="17.78" y="-246.38" size="1.778" layer="91">WHEEL_2_GND</text>
-<text x="15.24" y="-152.4" size="1.778" layer="91">WHEEL2_SENS</text>
-<text x="15.24" y="-147.32" size="1.778" layer="91">WHEEL1_SENS</text>
 <text x="224.536" y="-124.714" size="0.6096" layer="91">PWR_IMD_LED</text>
 <text x="224.536" y="-127.254" size="0.6096" layer="91">PWR_BMS_LED</text>
 <text x="224.282" y="-122.174" size="0.6096" layer="91">IMD_LIGHT_GND</text>
@@ -8724,12 +8658,14 @@ W = angled&lt;p&gt;
 <text x="13.208" y="-51.308" size="0.6096" layer="91">BRAKE_SENSE</text>
 <text x="13.208" y="-53.848" size="0.6096" layer="91">BRAKE_P_GND</text>
 <text x="13.208" y="-56.388" size="0.6096" layer="91">BRAKE_P_PWR</text>
+<text x="13.208" y="-71.628" size="0.6096" layer="91">L_WHEEL_SENSOR_PWR</text>
+<text x="13.208" y="-74.168" size="0.6096" layer="91">L_WHEEL_SENSOR_GND</text>
+<text x="13.208" y="-76.708" size="0.6096" layer="91">L_WHEEL_SENSE</text>
+<text x="13.208" y="-89.408" size="0.6096" layer="91">R_WHEEL_SENSOR_PWR</text>
+<text x="13.208" y="-91.948" size="0.6096" layer="91">R_WHEEL_SENSOR_GND</text>
+<text x="13.208" y="-94.488" size="0.6096" layer="91">R_WHEEL_SENSE</text>
 </plain>
 <instances>
-<instance part="CONN1" gate="G$1" x="25.4" y="-160.02" smashed="yes">
-<attribute name="NAME" x="12.7" y="-134.62" size="2.54" layer="95"/>
-<attribute name="VALUE" x="12.7" y="-187.96" size="2.54" layer="96"/>
-</instance>
 <instance part="SV1" gate="G$1" x="147.32" y="-76.2" smashed="yes">
 <attribute name="VALUE" x="146.05" y="-83.82" size="1.778" layer="96"/>
 <attribute name="NAME" x="146.05" y="-70.358" size="1.778" layer="95"/>
@@ -8762,13 +8698,6 @@ W = angled&lt;p&gt;
 <instance part="C4" gate="G$1" x="208.28" y="-63.5" smashed="yes">
 <attribute name="NAME" x="209.296" y="-62.865" size="1.778" layer="95"/>
 <attribute name="VALUE" x="209.296" y="-67.691" size="1.778" layer="96"/>
-</instance>
-<instance part="CONN2" gate="G$1" x="27.94" y="-238.76" smashed="yes">
-<attribute name="NAME" x="15.24" y="-213.36" size="2.54" layer="95"/>
-<attribute name="VALUE" x="15.24" y="-266.7" size="2.54" layer="96"/>
-</instance>
-<instance part="GND16" gate="1" x="68.58" y="-236.22" smashed="yes" rot="R90">
-<attribute name="VALUE" x="71.12" y="-238.76" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="208.28" y="-78.74" smashed="yes">
 <attribute name="VALUE" x="205.74" y="-81.28" size="1.778" layer="96"/>
@@ -8897,6 +8826,13 @@ W = angled&lt;p&gt;
 <instance part="GND4" gate="1" x="43.18" y="-71.12" smashed="yes" rot="R180">
 <attribute name="VALUE" x="45.72" y="-68.58" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="R_WHEEL_SENSOR" gate="G$1" x="17.78" y="-91.44" smashed="yes" rot="MR0">
+<attribute name="NAME" x="23.36" y="-86.36" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="22.86" y="-99.06" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND5" gate="1" x="43.18" y="-88.9" smashed="yes" rot="R180">
+<attribute name="VALUE" x="45.72" y="-86.36" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8918,17 +8854,6 @@ W = angled&lt;p&gt;
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="276.86" y1="-66.04" x2="276.86" y2="-60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND16" gate="1" pin="GND"/>
-<pinref part="CONN2" gate="G$1" pin="P$5"/>
-<wire x1="55.88" y1="-236.22" x2="66.04" y2="-236.22" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-241.3" x2="55.88" y2="-241.3" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-241.3" x2="55.88" y2="-236.22" width="0.1524" layer="91"/>
-<pinref part="CONN2" gate="G$1" pin="P$6"/>
-<wire x1="45.72" y1="-246.38" x2="55.88" y2="-246.38" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-246.38" x2="55.88" y2="-241.3" width="0.1524" layer="91"/>
-<junction x="55.88" y="-241.3"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -9019,6 +8944,11 @@ W = angled&lt;p&gt;
 <wire x1="27.94" y1="-73.66" x2="43.18" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R_WHEEL_SENSOR" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="-91.44" x2="43.18" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="SIG_START_BUTTON" class="0">
 <segment>
@@ -9095,11 +9025,6 @@ W = angled&lt;p&gt;
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="CONN2" gate="G$1" pin="P$1"/>
-<wire x1="45.72" y1="-220.98" x2="48.26" y2="-220.98" width="0.1524" layer="91"/>
-<label x="48.26" y="-220.98" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$6" gate="G$1" pin="VIN"/>
 <wire x1="177.8" y1="63.5" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
@@ -9142,6 +9067,11 @@ W = angled&lt;p&gt;
 <pinref part="L_WHEEL_SENSOR" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="-71.12" x2="30.48" y2="-71.12" width="0.1524" layer="91"/>
 <label x="30.48" y="-71.12" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R_WHEEL_SENSOR" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="-88.9" x2="30.48" y2="-88.9" width="0.1524" layer="91"/>
+<label x="30.48" y="-88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SIG_CAN_H" class="0">
@@ -9230,32 +9160,6 @@ W = angled&lt;p&gt;
 <pinref part="START_BUTTON" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="-12.7" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
 <label x="30.48" y="-12.7" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="12V" class="0">
-<segment>
-<pinref part="CONN2" gate="G$1" pin="P$8"/>
-<wire x1="45.72" y1="-256.54" x2="48.26" y2="-256.54" width="0.1524" layer="91"/>
-<label x="48.26" y="-256.54" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="CONN2" gate="G$1" pin="P$2"/>
-<wire x1="45.72" y1="-226.06" x2="48.26" y2="-226.06" width="0.1524" layer="91"/>
-<label x="48.26" y="-226.06" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SIG_WHEEL2" class="0">
-<segment>
-<pinref part="CONN1" gate="G$1" pin="P$3"/>
-<wire x1="43.18" y1="-152.4" x2="73.66" y2="-152.4" width="0.1524" layer="91"/>
-<label x="73.66" y="-152.4" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SIG_WHEEL1" class="0">
-<segment>
-<pinref part="CONN1" gate="G$1" pin="P$2"/>
-<wire x1="43.18" y1="-147.32" x2="73.66" y2="-147.32" width="0.1524" layer="91"/>
-<label x="73.66" y="-147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SIG_IMD_FAULT" class="0">
@@ -9398,6 +9302,11 @@ W = angled&lt;p&gt;
 <pinref part="U$6" gate="G$1" pin="21-A7/RX5/BCLK1"/>
 <wire x1="147.32" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
 <label x="144.78" y="35.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R_WHEEL_SENSOR" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="-93.98" x2="30.48" y2="-93.98" width="0.1524" layer="91"/>
+<label x="30.48" y="-93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

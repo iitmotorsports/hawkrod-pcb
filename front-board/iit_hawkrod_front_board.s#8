@@ -8894,8 +8894,8 @@ W = angled&lt;p&gt;
 <attribute name="NAME" x="23.36" y="-68.58" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="22.86" y="-81.28" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND4" gate="1" x="48.26" y="-73.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="50.8" y="-76.2" size="1.778" layer="96" rot="R90"/>
+<instance part="GND4" gate="1" x="43.18" y="-71.12" smashed="yes" rot="R180">
+<attribute name="VALUE" x="45.72" y="-68.58" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -9016,7 +9016,7 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="L_WHEEL_SENSOR" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="-73.66" x2="45.72" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-73.66" x2="43.18" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -9250,22 +9250,12 @@ W = angled&lt;p&gt;
 <wire x1="43.18" y1="-152.4" x2="73.66" y2="-152.4" width="0.1524" layer="91"/>
 <label x="73.66" y="-152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="21-A7/RX5/BCLK1"/>
-<wire x1="147.32" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
-<label x="144.78" y="35.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
 </net>
 <net name="SIG_WHEEL1" class="0">
 <segment>
 <pinref part="CONN1" gate="G$1" pin="P$2"/>
 <wire x1="43.18" y1="-147.32" x2="73.66" y2="-147.32" width="0.1524" layer="91"/>
 <label x="73.66" y="-147.32" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="20-A6/TX5/LRCLK1"/>
-<wire x1="147.32" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
-<label x="144.78" y="38.1" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="SIG_IMD_FAULT" class="0">
@@ -9389,6 +9379,25 @@ W = angled&lt;p&gt;
 <wire x1="27.94" y1="-50.8" x2="86.36" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="-50.8" x2="86.36" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="SIG_L_WHEEL_SENSOR" class="0">
+<segment>
+<pinref part="L_WHEEL_SENSOR" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="-76.2" x2="30.48" y2="-76.2" width="0.1524" layer="91"/>
+<label x="30.48" y="-76.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="20-A6/TX5/LRCLK1"/>
+<wire x1="147.32" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="144.78" y="38.1" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+</net>
+<net name="SIG_R_WHEEL_SENSOR" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="21-A7/RX5/BCLK1"/>
+<wire x1="147.32" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
+<label x="144.78" y="35.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 </nets>

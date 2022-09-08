@@ -2666,6 +2666,8 @@ design rules under a new name.</description>
 <contactref element="START_BUTTON" pad="3"/>
 <contactref element="DRIVE_CONTROLS" pad="1"/>
 <contactref element="DRIVE_CONTROLS" pad="7"/>
+<contactref element="L_WHEEL_SENSOR" pad="1"/>
+<wire x1="-83.581190625" y1="-72.7432125" x2="-95.2262" y2="-109.7922875" width="0" layer="19" extent="1-1"/>
 <wire x1="-68.341190625" y1="-72.7432125" x2="-83.581190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-68.635803125" y1="-35.5671125" x2="-68.341190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-66.095803125" y1="-35.5671125" x2="-68.635803125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
@@ -2903,9 +2905,6 @@ design rules under a new name.</description>
 <contactref element="DRIVE_CONTROLS" pad="5"/>
 <contactref element="R15" pad="2"/>
 <wire x1="-73.421190625" y1="-72.7432125" x2="-83.43096875" y2="-92.43215" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$11">
-<contactref element="L_WHEEL_SENSOR" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

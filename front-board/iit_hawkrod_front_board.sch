@@ -8803,6 +8803,8 @@ W = angled&lt;p&gt;
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R_WHEEL_SENSOR" library="5-103635-2" deviceset="5-103635-2" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="STATUS_LIGHTS" library="5-103635-3" deviceset="5-103635-3" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8837,11 +8839,15 @@ W = angled&lt;p&gt;
 <text x="-2.032" y="-71.628" size="0.6096" layer="91">R_WHEEL_SENSOR_GND</text>
 <text x="-2.032" y="-74.168" size="0.6096" layer="91">R_WHEEL_SENSE</text>
 <text x="-25.4" y="71.12" size="6.4516" layer="91">External I/O</text>
-<text x="127" y="-111.76" size="6.4516" layer="91">HawkRod 22'</text>
-<text x="127" y="-116.84" size="2.54" layer="91">Revision 2022.1-beta | Last Updated: 9/5/2022</text>
-<text x="127" y="-144.78" size="2.54" layer="91">Electrical Lead: Isaias Rivera
+<text x="127" y="-134.62" size="6.4516" layer="91">HawkRod 22'</text>
+<text x="127" y="-139.7" size="2.54" layer="91">Revision 2022.1-beta | Last Updated: 9/5/2022</text>
+<text x="127" y="-167.64" size="2.54" layer="91">Electrical Lead: Isaias Rivera
 Schematic designed by: Noah Husby
 PCB designed by: Hazim Zainedin</text>
+<text x="4.064" y="-160.274" size="0.6096" layer="91" rot="MR0">PWR_LED_GND</text>
+<text x="4.064" y="-162.814" size="0.6096" layer="91" rot="MR0">HRT_LED_GND</text>
+<text x="4.318" y="-157.734" size="0.6096" layer="91" rot="MR0">PWR_LED_5V</text>
+<text x="4.064" y="-165.354" size="0.6096" layer="91" rot="MR0">HRT_LED_3.3V</text>
 </plain>
 <instances>
 <instance part="SV1" gate="G$1" x="139.7" y="-55.88" smashed="yes">
@@ -9011,6 +9017,13 @@ PCB designed by: Hazim Zainedin</text>
 <instance part="GND5" gate="1" x="27.94" y="-68.58" smashed="yes" rot="R180">
 <attribute name="VALUE" x="30.48" y="-66.04" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="STATUS_LIGHTS" gate="G$1" x="2.54" y="-160.02" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.6286" y="-154.29531875" size="1.781009375" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="7.620140625" y="-170.1803" size="1.77805" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND6" gate="1" x="27.94" y="-157.48" smashed="yes" rot="R180">
+<attribute name="VALUE" x="30.48" y="-154.94" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9126,6 +9139,14 @@ PCB designed by: Hazim Zainedin</text>
 <pinref part="R_WHEEL_SENSOR" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="-71.12" x2="27.94" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="12.7" y1="-160.02" x2="27.94" y2="-160.02" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="STATUS_LIGHTS" gate="G$1" pin="2"/>
+<pinref part="STATUS_LIGHTS" gate="G$1" pin="3"/>
+<wire x1="12.7" y1="-160.02" x2="12.7" y2="-162.56" width="0.1524" layer="91"/>
+<junction x="12.7" y="-160.02"/>
 </segment>
 </net>
 <net name="SIG_START_BUTTON" class="0">
@@ -9251,6 +9272,11 @@ PCB designed by: Hazim Zainedin</text>
 <wire x1="12.7" y1="-68.58" x2="15.24" y2="-68.58" width="0.1524" layer="91"/>
 <label x="15.24" y="-68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="12.7" y1="-157.48" x2="15.24" y2="-157.48" width="0.1524" layer="91"/>
+<label x="15.24" y="-157.48" size="1.778" layer="95" rot="MR180" xref="yes"/>
+<pinref part="STATUS_LIGHTS" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="SIG_CAN_H" class="0">
 <segment>
@@ -9374,9 +9400,8 @@ PCB designed by: Hazim Zainedin</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="D"/>
 <wire x1="60.96" y1="-86.36" x2="60.96" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-81.28" x2="15.24" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-81.28" x2="15.24" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-93.98" x2="12.7" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-81.28" x2="12.7" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-81.28" x2="12.7" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="FAULT_INDICATORS" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -9490,17 +9515,29 @@ PCB designed by: Hazim Zainedin</text>
 <net name="N$11" class="0">
 <segment>
 <wire x1="116.84" y1="68.58" x2="-25.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="68.58" x2="116.84" y2="-149.86" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="-149.86" x2="-25.4" y2="-149.86" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-149.86" x2="-25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="68.58" x2="116.84" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="-172.72" x2="-25.4" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-172.72" x2="-25.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<wire x1="121.92" y1="-149.86" x2="121.92" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="-99.06" x2="233.68" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="-99.06" x2="233.68" y2="-149.86" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="-149.86" x2="121.92" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-172.72" x2="121.92" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-121.92" x2="233.68" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-121.92" x2="233.68" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-172.72" x2="121.92" y2="-172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SIG_HRT_LED" class="0">
+<segment>
+<wire x1="203.2" y1="0" x2="205.74" y2="0" width="0.1524" layer="91"/>
+<label x="205.74" y="0" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$6" gate="G$1" pin="13-SCK/LED"/>
+</segment>
+<segment>
+<wire x1="12.7" y1="-165.1" x2="15.24" y2="-165.1" width="0.1524" layer="91"/>
+<label x="15.24" y="-165.1" size="1.27" layer="95" xref="yes"/>
+<pinref part="STATUS_LIGHTS" gate="G$1" pin="4"/>
 </segment>
 </net>
 </nets>

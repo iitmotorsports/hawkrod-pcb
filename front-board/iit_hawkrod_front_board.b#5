@@ -2530,7 +2530,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="-84.85296875" y="-110.97785625" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-86.12296875" y="-113.51785625" size="1.27" layer="27"/>
 </element>
-<element name="J1" library="5-103635-2" package="TE_5-103635-2" value="5-103635-2" x="-92.6862" y="-109.7922875" smashed="yes">
+<element name="L_WHEEL_SENSOR" library="5-103635-2" package="TE_5-103635-2" value="5-103635-2" x="-92.6862" y="-109.7922875" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="-92.6862" y="-109.7922875" size="1.778" layer="27" display="off"/>
 <attribute name="COMMENT" value="5-103635-2" x="-92.6862" y="-109.7922875" size="1.778" layer="27" display="off"/>
 <attribute name="DESCRIPTION" value=" AMPMODU 3 Position 2.54 mm Single Row Through-Hole Right Angle Header " x="-92.6862" y="-109.7922875" size="1.778" layer="27" display="off"/>
@@ -2588,6 +2588,8 @@ design rules under a new name.</description>
 <contactref element="R20" pad="1"/>
 <contactref element="R16" pad="1"/>
 <contactref element="R19" pad="1"/>
+<contactref element="L_WHEEL_SENSOR" pad="2"/>
+<wire x1="-86.27496875" y1="-110.97785625" x2="-92.6862" y2="-109.7922875" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.27496875" y1="-104.79595625" x2="-86.27496875" y2="-110.97785625" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.27496875" y1="-98.614053125" x2="-86.27496875" y2="-104.79595625" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.041190625" y1="-72.7432125" x2="-86.27496875" y2="-98.614053125" width="0" layer="19" extent="1-1"/>
@@ -2901,6 +2903,9 @@ design rules under a new name.</description>
 <contactref element="DRIVE_CONTROLS" pad="5"/>
 <contactref element="R15" pad="2"/>
 <wire x1="-73.421190625" y1="-72.7432125" x2="-83.43096875" y2="-92.43215" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11">
+<contactref element="L_WHEEL_SENSOR" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

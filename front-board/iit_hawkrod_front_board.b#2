@@ -760,25 +760,6 @@ REV 2</text>
 <libraries>
 <library name="SAE_2019">
 <packages>
-<package name="TE-5-2172077-2">
-<hole x="-7.5" y="-1.27" drill="2.35"/>
-<hole x="7.5" y="-1.27" drill="2.35"/>
-<hole x="-7.5" y="-5.27" drill="2.8"/>
-<hole x="7.5" y="-5.27" drill="2.8"/>
-<pad name="1" x="0" y="0" drill="1"/>
-<pad name="7" x="-2.725" y="0" drill="1"/>
-<pad name="3" x="2.725" y="0" drill="1"/>
-<pad name="6" x="-2.075" y="-2.54" drill="1"/>
-<pad name="5" x="0" y="-2.54" drill="1"/>
-<pad name="4" x="2.075" y="-2.54" drill="1"/>
-<pad name="8" x="-1.5" y="2.54" drill="1"/>
-<pad name="2" x="1.5" y="2.54" drill="1"/>
-<wire x1="-9.75" y1="5" x2="9.75" y2="5" width="0.127" layer="21"/>
-<wire x1="9.75" y1="5" x2="9.75" y2="-10" width="0.127" layer="21"/>
-<wire x1="9.75" y1="-10" x2="-9.75" y2="-10" width="0.127" layer="21"/>
-<wire x1="-9.75" y1="-10" x2="-9.75" y2="5" width="0.127" layer="21"/>
-<text x="-9.6" y="5.6" size="1.5" layer="21" font="vector" ratio="20">&gt;NAME</text>
-</package>
 <package name="R-PDSO-8">
 <description>TI R-PDS0-G8</description>
 <wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.2" layer="21"/>
@@ -2366,9 +2347,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="CONN1" library="SAE_2019" package="TE-5-2172077-2" value="TE-5-2172077-2" x="10.16" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.76" y="23.57" size="1.5" layer="21" font="vector" ratio="20" rot="R270"/>
-</element>
 <element name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" package="MA03-1" package3d_urn="urn:adsk.eagle:package:8339/1" value="" x="21.36" y="31.75" smashed="yes">
 <attribute name="MF" value="" x="39.14" y="-8.89" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="39.14" y="-8.89" size="1.778" layer="27" display="off"/>
@@ -2393,9 +2371,6 @@ design rules under a new name.</description>
 <element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100 nF" x="44.15363125" y="26.2897625" smashed="yes" rot="R270">
 <attribute name="SPICEPREFIX" value="C" x="44.15363125" y="26.2897625" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="45.36363125" y="27.5597625" size="0.6096" layer="27" rot="R270"/>
-</element>
-<element name="CONN2" library="SAE_2019" package="TE-5-2172077-2" value="TE-5-2172077-2" x="10.16" y="35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.76" y="45.16" size="1.5" layer="21" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="U$2" library="SAE_2019" package="DPAK" value="NVD5C648NLT4G" x="51.75" y="66.75" smashed="yes">
 <attribute name="NAME" x="44.13" y="70.56" size="1.5" layer="25" font="vector" ratio="20"/>
@@ -2543,6 +2518,19 @@ design rules under a new name.</description>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/5-103635-2/?ref=eda" x="-92.6862" y="-109.7922875" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-98.4562" y="-113.4822875" size="1.27" layer="27"/>
 </element>
+<element name="R_WHEEL_SENSOR" library="5-103635-2" package="TE_5-103635-2" value="5-103635-2" x="-92.6862" y="-129.43888125" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="COMMENT" value="5-103635-2" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" AMPMODU 3 Position 2.54 mm Single Row Through-Hole Right Angle Header " x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="EU_ROHS_COMPLIANCE" value="Compliant" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="TE Connectivity" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="5-103635-2" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-98.4562" y="-115.86888125" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="None" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/5-103635-2/?ref=eda" x="-104.287853125" y="-109.7922875" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-98.4562" y="-133.12888125" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2563,8 +2551,6 @@ design rules under a new name.</description>
 <vertex x="-10.5" y="-8.25"/>
 </polygon>
 <contactref element="C4" pad="2"/>
-<contactref element="CONN2" pad="5"/>
-<contactref element="CONN2" pad="6"/>
 <contactref element="U$2" pad="3"/>
 <contactref element="U$5" pad="3"/>
 <contactref element="R3" pad="1"/>
@@ -2589,9 +2575,11 @@ design rules under a new name.</description>
 <contactref element="R16" pad="1"/>
 <contactref element="R19" pad="1"/>
 <contactref element="L_WHEEL_SENSOR" pad="2"/>
-<wire x1="-86.27496875" y1="-110.97785625" x2="-92.6862" y2="-109.7922875" width="0" layer="19" extent="1-1"/>
+<contactref element="R_WHEEL_SENSOR" pad="2"/>
+<wire x1="-86.27496875" y1="-110.97785625" x2="-92.6862" y2="-129.43888125" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.27496875" y1="-104.79595625" x2="-86.27496875" y2="-110.97785625" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.27496875" y1="-98.614053125" x2="-86.27496875" y2="-104.79595625" width="0" layer="19" extent="1-1"/>
+<wire x1="-92.6862" y1="-109.7922875" x2="-86.27496875" y2="-110.97785625" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.041190625" y1="-72.7432125" x2="-86.27496875" y2="-98.614053125" width="0" layer="19" extent="1-1"/>
 <wire x1="-70.881190625" y1="-72.7432125" x2="-81.041190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.27496875" y1="-54.2821875" x2="-81.041190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
@@ -2615,9 +2603,7 @@ design rules under a new name.</description>
 <wire x1="45.38394375" y1="60.308346875" x2="47.676865625" y2="62.327128125" width="0" layer="19" extent="1-1"/>
 <wire x1="54.54" y1="69.035" x2="47.676865625" y2="62.327128125" width="0" layer="19" extent="1-1"/>
 <wire x1="23.9" y1="31.75" x2="35.05363125" y2="21.8447625" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="35.56" x2="23.9" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="37.635" x2="7.62" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="18.376340625" y1="56.356934375" x2="7.62" y2="37.635" width="0" layer="19" extent="1-1"/>
+<wire x1="18.376340625" y1="56.356934375" x2="23.9" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SIG_START_BUTTON">
 <contactref element="U$6" pad="2-OUT2"/>
@@ -2655,9 +2641,6 @@ design rules under a new name.</description>
 <wire x1="19.816471875" y1="-9.8671625" x2="-59.684315625" y2="-41.91838125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
-<contactref element="CONN2" pad="1"/>
-<wire x1="10.237" y1="38.124" x2="10.237" y2="35.653" width="0.406" layer="1"/>
-<wire x1="10.237" y1="35.653" x2="10.16" y2="35.56" width="0.406" layer="1"/>
 <contactref element="U$6" pad="VIN"/>
 <contactref element="MAIN_CONN" pad="1"/>
 <contactref element="STEER_SENSOR" pad="1"/>
@@ -2667,6 +2650,8 @@ design rules under a new name.</description>
 <contactref element="DRIVE_CONTROLS" pad="1"/>
 <contactref element="DRIVE_CONTROLS" pad="7"/>
 <contactref element="L_WHEEL_SENSOR" pad="1"/>
+<contactref element="R_WHEEL_SENSOR" pad="1"/>
+<wire x1="-95.2262" y1="-109.7922875" x2="-95.2262" y2="-129.43888125" width="0" layer="19" extent="1-1"/>
 <wire x1="-83.581190625" y1="-72.7432125" x2="-95.2262" y2="-109.7922875" width="0" layer="19" extent="1-1"/>
 <wire x1="-68.341190625" y1="-72.7432125" x2="-83.581190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-68.635803125" y1="-35.5671125" x2="-68.341190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
@@ -2675,7 +2660,6 @@ design rules under a new name.</description>
 <wire x1="-81.931128125" y1="-35.5671125" x2="-68.635803125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.21248125" y1="-22.22944375" x2="-57.033896875" y2="-34.550909375" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.123528125" y1="-9.8671625" x2="-21.21248125" y2="-22.22944375" width="0" layer="19" extent="1-1"/>
-<wire x1="10.16" y1="35.56" x2="-8.123528125" y2="-9.8671625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SIG_CAN_H">
 <contactref element="SV1" pad="1"/>
@@ -2761,51 +2745,6 @@ design rules under a new name.</description>
 <contactref element="START_BUTTON" pad="1"/>
 <wire x1="27.436471875" y1="-25.1071625" x2="-76.851128125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
 <wire x1="40.55363125" y1="24.3847625" x2="27.436471875" y2="-25.1071625" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="12V">
-<contactref element="CONN2" pad="8"/>
-<contactref element="CONN2" pad="2"/>
-<wire x1="12.708" y1="36.712" x2="12.708" y2="34.241" width="0.406" layer="1"/>
-<wire x1="12.708" y1="34.241" x2="12.7" y2="34.06" width="0.406" layer="1"/>
-<wire x1="12.708" y1="36.712" x2="12.7" y2="37.06" width="0.406" layer="1"/>
-<wire x1="12.355" y1="49.773" x2="12.355" y2="37.065" width="0.406" layer="16"/>
-<wire x1="9.884" y1="52.244" x2="12.355" y2="49.773" width="0.406" layer="16"/>
-<wire x1="8.472" y1="52.244" x2="9.884" y2="52.244" width="0.406" layer="16"/>
-<wire x1="6.354" y1="54.362" x2="8.472" y2="52.244" width="0.406" layer="16"/>
-<wire x1="6.354" y1="60.01" x2="6.354" y2="54.362" width="0.406" layer="16"/>
-<wire x1="8.472" y1="62.128" x2="6.354" y2="60.01" width="0.406" layer="16"/>
-<wire x1="9.884" y1="62.128" x2="8.472" y2="62.128" width="0.406" layer="16"/>
-<wire x1="11.296" y1="63.54" x2="9.884" y2="62.128" width="0.406" layer="16"/>
-<wire x1="11.296" y1="84.72" x2="11.296" y2="63.54" width="0.406" layer="16"/>
-<wire x1="13.061" y1="86.485" x2="11.296" y2="84.72" width="0.406" layer="16"/>
-<wire x1="12.355" y1="37.065" x2="12.7" y2="37.06" width="0.406" layer="16"/>
-</signal>
-<signal name="SIG_WHEEL2">
-<contactref element="CONN1" pad="3"/>
-<wire x1="36.712" y1="82.955" x2="36.712" y2="83.661" width="0.406" layer="16"/>
-<wire x1="22.945" y1="69.188" x2="36.712" y2="82.955" width="0.406" layer="16"/>
-<wire x1="22.945" y1="37.418" x2="22.945" y2="69.188" width="0.406" layer="16"/>
-<wire x1="19.415" y1="33.888" x2="22.945" y2="37.418" width="0.406" layer="16"/>
-<wire x1="18.356" y1="33.888" x2="19.415" y2="33.888" width="0.406" layer="16"/>
-<wire x1="11.296" y1="26.828" x2="18.356" y2="33.888" width="0.406" layer="16"/>
-<wire x1="11.296" y1="20.474" x2="11.296" y2="26.828" width="0.406" layer="16"/>
-<wire x1="8.472" y1="17.65" x2="11.296" y2="20.474" width="0.406" layer="16"/>
-<wire x1="7.413" y1="17.65" x2="8.472" y2="17.65" width="0.406" layer="16"/>
-<wire x1="6.354" y1="16.591" x2="7.413" y2="17.65" width="0.406" layer="16"/>
-<wire x1="6.354" y1="11.296" x2="6.354" y2="16.591" width="0.406" layer="16"/>
-<wire x1="7.06" y1="10.59" x2="6.354" y2="11.296" width="0.406" layer="16"/>
-<wire x1="9.531" y1="10.59" x2="7.06" y2="10.59" width="0.406" layer="16"/>
-<wire x1="9.884" y1="10.943" x2="9.531" y2="10.59" width="0.406" layer="16"/>
-<wire x1="9.884" y1="10.943" x2="10.16" y2="11.245" width="0.406" layer="16"/>
-</signal>
-<signal name="SIG_WHEEL1">
-<contactref element="CONN1" pad="2"/>
-<wire x1="36.712" y1="80.484" x2="36.712" y2="81.19" width="0.406" layer="16"/>
-<wire x1="25.416" y1="69.188" x2="36.712" y2="80.484" width="0.406" layer="16"/>
-<wire x1="25.416" y1="25.769" x2="25.416" y2="69.188" width="0.406" layer="16"/>
-<wire x1="12.355" y1="12.708" x2="25.416" y2="25.769" width="0.406" layer="1"/>
-<wire x1="12.355" y1="12.708" x2="12.7" y2="12.47" width="0.406" layer="1"/>
-<via x="25.416" y="25.769" extent="1-16" drill="0.45"/>
 </signal>
 <signal name="SIG_IMD_FAULT">
 <contactref element="U$2" pad="1"/>
@@ -2909,6 +2848,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="SIG_R_WHEEL_SENSOR">
 <contactref element="U$6" pad="21-A7/RX5/BCLK1"/>
+<contactref element="R_WHEEL_SENSOR" pad="3"/>
+<wire x1="4.576471875" y1="-9.8671625" x2="-90.1462" y2="-129.43888125" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

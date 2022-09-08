@@ -8664,6 +8664,7 @@ W = angled&lt;p&gt;
 <text x="-2.032" y="-69.088" size="0.6096" layer="91">R_WHEEL_SENSOR_PWR</text>
 <text x="-2.032" y="-71.628" size="0.6096" layer="91">R_WHEEL_SENSOR_GND</text>
 <text x="-2.032" y="-74.168" size="0.6096" layer="91">R_WHEEL_SENSE</text>
+<text x="-25.4" y="71.12" size="6.4516" layer="91">External I/O</text>
 </plain>
 <instances>
 <instance part="SV1" gate="G$1" x="139.7" y="-55.88" smashed="yes">
