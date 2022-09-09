@@ -9064,11 +9064,11 @@ PCB designed by: Hazim Zainedin</text>
 <attribute name="VALUE" x="35.56" y="-35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R10" gate="G$1" x="81.28" y="-33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="79.7814" y="-36.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="87.4014" y="-36.83" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="84.582" y="-36.83" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R14" gate="G$1" x="76.2" y="-35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="74.7014" y="-39.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="74.7014" y="-41.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.502" y="-39.37" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R15" gate="G$1" x="71.12" y="-38.1" smashed="yes" rot="R90">
