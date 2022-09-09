@@ -2529,6 +2529,36 @@ design rules under a new name.</description>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/5-103635-6/?ref=eda" x="-75.961190625" y="-72.7432125" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-86.811190625" y="-76.4332125" size="1.27" layer="27"/>
 </element>
+<element name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="66.5k" x="-84.85296875" y="-80.06834375" smashed="yes">
+<attribute name="NAME" x="-86.12296875" y="-78.79834375" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-84.85296875" y="-80.06834375" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-86.12296875" y="-82.60834375" size="1.27" layer="27"/>
+</element>
+<element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="66.5k" x="-84.85296875" y="-86.250246875" smashed="yes">
+<attribute name="NAME" x="-86.12296875" y="-84.980246875" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-84.85296875" y="-86.250246875" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-86.12296875" y="-88.790246875" size="1.27" layer="27"/>
+</element>
+<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="66.5k" x="-84.85296875" y="-92.43215" smashed="yes">
+<attribute name="NAME" x="-86.12296875" y="-91.16215" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-84.85296875" y="-92.43215" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-86.12296875" y="-94.97215" size="1.27" layer="27"/>
+</element>
+<element name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100k" x="-84.85296875" y="-98.614053125" smashed="yes">
+<attribute name="NAME" x="-86.12296875" y="-97.344053125" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-84.85296875" y="-98.614053125" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-86.12296875" y="-101.154053125" size="1.27" layer="27"/>
+</element>
+<element name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100k" x="-84.85296875" y="-104.79595625" smashed="yes">
+<attribute name="NAME" x="-86.12296875" y="-103.52595625" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-84.85296875" y="-104.79595625" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-86.12296875" y="-107.33595625" size="1.27" layer="27"/>
+</element>
+<element name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100k" x="-84.85296875" y="-110.97785625" smashed="yes">
+<attribute name="NAME" x="-86.12296875" y="-109.70785625" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-84.85296875" y="-110.97785625" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-86.12296875" y="-113.51785625" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2579,6 +2609,12 @@ design rules under a new name.</description>
 <contactref element="R8" pad="1"/>
 <contactref element="DRIVE_CONTROLS" pad="2"/>
 <contactref element="DRIVE_CONTROLS" pad="6"/>
+<contactref element="R20" pad="1"/>
+<contactref element="R16" pad="1"/>
+<contactref element="R19" pad="1"/>
+<wire x1="-86.27496875" y1="-104.79595625" x2="-86.27496875" y2="-110.97785625" width="0" layer="19" extent="1-1"/>
+<wire x1="-86.27496875" y1="-98.614053125" x2="-86.27496875" y2="-104.79595625" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.041190625" y1="-72.7432125" x2="-86.27496875" y2="-98.614053125" width="0" layer="19" extent="1-1"/>
 <wire x1="-70.881190625" y1="-72.7432125" x2="-81.041190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.27496875" y1="-54.2821875" x2="-81.041190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-56.840315625" y1="-48.100284375" x2="-70.881190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
@@ -2715,9 +2751,13 @@ design rules under a new name.</description>
 <contactref element="FAULT_INDICATORS" pad="2"/>
 <contactref element="FAULT_INDICATORS" pad="3"/>
 <contactref element="START_BUTTON" pad="3"/>
-<wire x1="-68.635803125" y1="-35.5671125" x2="-81.931128125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
+<contactref element="DRIVE_CONTROLS" pad="1"/>
+<contactref element="DRIVE_CONTROLS" pad="7"/>
+<wire x1="-68.341190625" y1="-72.7432125" x2="-83.581190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
+<wire x1="-68.635803125" y1="-35.5671125" x2="-68.341190625" y2="-72.7432125" width="0" layer="19" extent="1-1"/>
 <wire x1="-66.095803125" y1="-35.5671125" x2="-68.635803125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.033896875" y1="-34.550909375" x2="-66.095803125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.931128125" y1="-35.5671125" x2="-68.635803125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.21248125" y1="-22.22944375" x2="-57.033896875" y2="-34.550909375" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.123528125" y1="-9.8671625" x2="-21.21248125" y2="-22.22944375" width="0" layer="19" extent="1-1"/>
 <wire x1="10.16" y1="35.56" x2="-8.123528125" y2="-9.8671625" width="0" layer="19" extent="1-1"/>
@@ -2976,10 +3016,34 @@ design rules under a new name.</description>
 <wire x1="47.444659375" y1="37.005165625" x2="-84.471128125" y2="-35.5671125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
-<contactref element="DRIVE_CONTROLS" pad="1"/>
+<contactref element="DRIVE_CONTROLS" pad="3"/>
+<contactref element="R10" pad="2"/>
+<wire x1="-78.501190625" y1="-72.7432125" x2="-83.43096875" y2="-80.06834375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
-<contactref element="DRIVE_CONTROLS" pad="7"/>
+<contactref element="DRIVE_CONTROLS" pad="4"/>
+<contactref element="R14" pad="2"/>
+<wire x1="-75.961190625" y1="-72.7432125" x2="-83.43096875" y2="-86.250246875" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="DRIVE_CONTROLS" pad="5"/>
+<contactref element="R15" pad="2"/>
+<wire x1="-73.421190625" y1="-72.7432125" x2="-83.43096875" y2="-92.43215" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16">
+<contactref element="R10" pad="1"/>
+<contactref element="R16" pad="2"/>
+<wire x1="-86.27496875" y1="-80.06834375" x2="-83.43096875" y2="-98.614053125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$17">
+<contactref element="R14" pad="1"/>
+<contactref element="R19" pad="2"/>
+<wire x1="-86.27496875" y1="-86.250246875" x2="-83.43096875" y2="-104.79595625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="R15" pad="1"/>
+<contactref element="R20" pad="2"/>
+<wire x1="-86.27496875" y1="-92.43215" x2="-83.43096875" y2="-110.97785625" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

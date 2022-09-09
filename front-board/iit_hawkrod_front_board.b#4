@@ -2797,8 +2797,6 @@ design rules under a new name.</description>
 <wire x1="9.531" y1="10.59" x2="7.06" y2="10.59" width="0.406" layer="16"/>
 <wire x1="9.884" y1="10.943" x2="9.531" y2="10.59" width="0.406" layer="16"/>
 <wire x1="9.884" y1="10.943" x2="10.16" y2="11.245" width="0.406" layer="16"/>
-<contactref element="U$6" pad="21-A7/RX5/BCLK1"/>
-<wire x1="4.576471875" y1="-9.8671625" x2="10.16" y2="11.245" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SIG_WHEEL1">
 <contactref element="CONN1" pad="2"/>
@@ -2808,8 +2806,6 @@ design rules under a new name.</description>
 <wire x1="12.355" y1="12.708" x2="25.416" y2="25.769" width="0.406" layer="1"/>
 <wire x1="12.355" y1="12.708" x2="12.7" y2="12.47" width="0.406" layer="1"/>
 <via x="25.416" y="25.769" extent="1-16" drill="0.45"/>
-<contactref element="U$6" pad="20-A6/TX5/LRCLK1"/>
-<wire x1="7.116471875" y1="-9.8671625" x2="12.7" y2="12.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SIG_IMD_FAULT">
 <contactref element="U$2" pad="1"/>
@@ -2905,6 +2901,14 @@ design rules under a new name.</description>
 <contactref element="DRIVE_CONTROLS" pad="5"/>
 <contactref element="R15" pad="2"/>
 <wire x1="-73.421190625" y1="-72.7432125" x2="-83.43096875" y2="-92.43215" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SIG_L_WHEEL_SENSOR">
+<contactref element="L_WHEEL_SENSOR" pad="3"/>
+<contactref element="U$6" pad="20-A6/TX5/LRCLK1"/>
+<wire x1="7.116471875" y1="-9.8671625" x2="-90.1462" y2="-109.7922875" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SIG_R_WHEEL_SENSOR">
+<contactref element="U$6" pad="21-A7/RX5/BCLK1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

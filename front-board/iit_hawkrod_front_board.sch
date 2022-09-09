@@ -8745,6 +8745,90 @@ W = angled&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="1-292303-1">
+<packages>
+<package name="TE_1-292303-1">
+<wire x1="-7.315" y1="7" x2="-7.315" y2="-7" width="0.127" layer="51"/>
+<wire x1="-7.315" y1="-7" x2="7.315" y2="-7" width="0.127" layer="51"/>
+<wire x1="7.315" y1="-7" x2="7.315" y2="7" width="0.127" layer="51"/>
+<wire x1="7.315" y1="7" x2="-7.315" y2="7" width="0.127" layer="51"/>
+<wire x1="-7.315" y1="5" x2="-7.315" y2="7" width="0.127" layer="21"/>
+<wire x1="-7.315" y1="7" x2="7.315" y2="7" width="0.127" layer="21"/>
+<wire x1="7.315" y1="7" x2="7.315" y2="5" width="0.127" layer="21"/>
+<wire x1="-7.315" y1="1.49" x2="-7.315" y2="-7" width="0.127" layer="21"/>
+<wire x1="-7.315" y1="-7" x2="7.315" y2="-7" width="0.127" layer="21"/>
+<wire x1="7.315" y1="-7" x2="7.315" y2="1.49" width="0.127" layer="21"/>
+<wire x1="-7.565" y1="7.25" x2="-7.565" y2="5.24" width="0.05" layer="39"/>
+<wire x1="-7.565" y1="5.24" x2="-8.44" y2="5.24" width="0.05" layer="39"/>
+<wire x1="-8.44" y1="5.24" x2="-8.44" y2="1.27" width="0.05" layer="39"/>
+<wire x1="-8.44" y1="1.27" x2="-7.565" y2="1.27" width="0.05" layer="39"/>
+<wire x1="-7.565" y1="1.27" x2="-7.565" y2="-7.25" width="0.05" layer="39"/>
+<wire x1="-7.565" y1="-7.25" x2="7.565" y2="-7.25" width="0.05" layer="39"/>
+<wire x1="7.565" y1="-7.25" x2="7.565" y2="1.27" width="0.05" layer="39"/>
+<wire x1="7.565" y1="1.27" x2="8.44" y2="1.27" width="0.05" layer="39"/>
+<wire x1="8.44" y1="1.27" x2="8.44" y2="5.24" width="0.05" layer="39"/>
+<wire x1="8.44" y1="5.24" x2="7.565" y2="5.24" width="0.05" layer="39"/>
+<wire x1="7.565" y1="5.24" x2="7.565" y2="7.25" width="0.05" layer="39"/>
+<wire x1="7.565" y1="7.25" x2="-7.565" y2="7.25" width="0.05" layer="39"/>
+<text x="-6.82583125" y="8.02818125" size="1.78148125" layer="25">&gt;NAME</text>
+<text x="-6.93776875" y="-9.237859375" size="1.77806875" layer="27">&gt;VALUE</text>
+<circle x="-3.466" y="7.573" radius="0.1" width="0.2" layer="21"/>
+<pad name="1" x="-3.5" y="5.99" drill="0.92" shape="square"/>
+<pad name="2" x="-1" y="5.99" drill="0.92"/>
+<pad name="3" x="1" y="5.99" drill="0.92"/>
+<pad name="4" x="3.5" y="5.99" drill="0.92"/>
+<pad name="S1" x="-6.57" y="3.28" drill="2.3"/>
+<pad name="S2" x="6.57" y="3.28" drill="2.3"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1-292303-1">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.127" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.127" layer="94"/>
+<text x="-5.33691875" y="8.13245" size="1.77896875" layer="95">&gt;NAME</text>
+<text x="-5.595990625" y="-9.92016875" size="1.780540625" layer="96">&gt;VALUE</text>
+<pin name="1" x="10.16" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="10.16" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="10.16" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="4" x="10.16" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="SHIELD" x="10.16" y="-5.08" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1-292303-1" prefix="J">
+<description>Conn USB 2.0 Type A RCP 4 POS Solder RA SMD 4 Terminal 1 Port Box/Tray &lt;a href="https://pricing.snapeda.com/parts/1-292303-1/TE%20Connectivity/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="1-292303-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TE_1-292303-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="COMMENT" value="1-292303-1"/>
+<attribute name="DESCRIPTION" value=" Conn USB 2.0 Type A RCP 4 POS Solder RA SMD 4 Terminal 1 Port Box/Tray "/>
+<attribute name="EU_ROHS_COMPLIANCE" value="Compliant"/>
+<attribute name="MF" value="TE Connectivity"/>
+<attribute name="MP" value="1-292303-1"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/1-292303-1/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8805,6 +8889,9 @@ W = angled&lt;p&gt;
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="STATUS_LIGHTS" library="5-103635-3" deviceset="5-103635-3" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="DASH_USB" library="1-292303-1" deviceset="1-292303-1" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9024,6 +9111,16 @@ PCB designed by: Hazim Zainedin</text>
 <instance part="GND6" gate="1" x="27.94" y="-157.48" smashed="yes" rot="R180">
 <attribute name="VALUE" x="30.48" y="-154.94" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="DASH_USB" gate="G$1" x="243.84" y="53.34" smashed="yes" rot="MR0">
+<attribute name="NAME" x="249.17691875" y="61.47245" size="1.77896875" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="249.435990625" y="43.41983125" size="1.780540625" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND14" gate="1" x="228.6" y="60.96" smashed="yes" rot="R180">
+<attribute name="VALUE" x="231.14" y="63.5" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND16" gate="1" x="228.6" y="45.72" smashed="yes" rot="R180">
+<attribute name="VALUE" x="231.14" y="48.26" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9147,6 +9244,17 @@ PCB designed by: Hazim Zainedin</text>
 <pinref part="STATUS_LIGHTS" gate="G$1" pin="3"/>
 <wire x1="12.7" y1="-160.02" x2="12.7" y2="-162.56" width="0.1524" layer="91"/>
 <junction x="12.7" y="-160.02"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="DASH_USB" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="58.42" x2="233.68" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="228.6" y1="43.18" x2="233.68" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="DASH_USB" gate="G$1" pin="SHIELD"/>
+<wire x1="233.68" y1="48.26" x2="233.68" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SIG_START_BUTTON" class="0">
@@ -9276,6 +9384,11 @@ PCB designed by: Hazim Zainedin</text>
 <wire x1="12.7" y1="-157.48" x2="15.24" y2="-157.48" width="0.1524" layer="91"/>
 <label x="15.24" y="-157.48" size="1.778" layer="95" rot="MR180" xref="yes"/>
 <pinref part="STATUS_LIGHTS" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="233.68" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
+<label x="231.14" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="DASH_USB" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="SIG_CAN_H" class="0">
@@ -9538,6 +9651,24 @@ PCB designed by: Hazim Zainedin</text>
 <wire x1="12.7" y1="-165.1" x2="15.24" y2="-165.1" width="0.1524" layer="91"/>
 <label x="15.24" y="-165.1" size="1.27" layer="95" xref="yes"/>
 <pinref part="STATUS_LIGHTS" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="D-"/>
+<wire x1="203.2" y1="45.72" x2="215.9" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="45.72" x2="215.9" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="DASH_USB" gate="G$1" pin="3"/>
+<wire x1="215.9" y1="53.34" x2="233.68" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="D+"/>
+<wire x1="203.2" y1="43.18" x2="223.52" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="43.18" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="DASH_USB" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="55.88" x2="233.68" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
